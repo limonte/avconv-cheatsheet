@@ -14,3 +14,8 @@ avconv -i INPUT_VIDEO.mp4 -i INPUT_AUDIO.mp3 -codec copy -shortest OUTPUT.mp4
 ```bash
 avconv -i INPUT.mp3 -ac 1 OUTPUT.mp3
 ```
+
+### Get audio track from video
+```bash
+avconv -i INPUT.mp4 -acodec libmp3lame -ac 2 -ab 128k -vn -y OUTPUT.mp3
+```
