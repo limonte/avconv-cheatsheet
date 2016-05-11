@@ -9,3 +9,8 @@ avconv -i INPUT.mp4 -acodec copy -vcodec copy -ss 00:15:00 -t 00:00:10 OUTPUT.mp
 ```bash
 avconv -i INPUT_VIDEO.mp4 -i INPUT_AUDIO.mp3 -codec copy -shortest OUTPUT.mp4
 ```
+
+### Convert stereo to mono
+```bash
+avconv -i INPUT.mp3 -ac 1 OUTPUT.mp3
+```
