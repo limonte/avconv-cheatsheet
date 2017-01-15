@@ -37,5 +37,5 @@ avconv -i INPUT.mov -vf transpose=1 -strict -2 OUTPUT.mov
 
 ### Convert to GIF
 ```sh
-ffmpeg -ss 00:00:00.000 -i INPUT.mov -pix_fmt rgb24 -r 10 -s 640x320 OUTPUT.gif
+avconv -ss 00:00:00.000 -i INPUT.mov -pix_fmt rgb24 -r 10 -s 640x320 OUTPUT.gif
 ```
